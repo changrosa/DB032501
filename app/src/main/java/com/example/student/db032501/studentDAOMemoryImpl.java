@@ -12,7 +12,9 @@ public class studentDAOMemoryImpl implements studentDAO {
     //ArrayList<student> data; //因為要保留資料，不要每次都一個，改為 static
     public static ArrayList<student> data = new ArrayList<>();
 
-   /*因為要保留資料，不要每次都一個(物件)，改為 static
+   /*因為要保留資料，不要每次都一個(物件)，改為 static 靜態
+
+    原本的:
     public studentDAOMemoryImpl() {
         data = new ArrayList<>();
     }*/
