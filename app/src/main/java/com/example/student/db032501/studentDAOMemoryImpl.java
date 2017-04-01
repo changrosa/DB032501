@@ -73,7 +73,16 @@ public class studentDAOMemoryImpl implements studentDAO {
 
     @Override
     public student getStudent(int ID) {
-        return data.get(ID);
+        //return data.get(ID);
+        for (student d : data)
+        {
+            if (d.ID == ID)
+            {
+                return d;
+            }
+        }
+        return null;
+
     }
 
     @Override
